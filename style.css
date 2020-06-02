@@ -611,6 +611,8 @@ img {
     animation: slide-bg linear 10000ms infinite; }
   .single-slide .welcome-text {
     position: relative;
+    background-color: rgba(165, 165, 165, 0.20);
+    padding: 10px;
     z-index: 1; }
     .single-slide .welcome-text h2 {
       font-size: 72px;
@@ -1734,3 +1736,38 @@ img {
 /* ====== The End ====== */
 
 /*# sourceMappingURL=style.css.map */
+
+/* 
+
+*/
+
+/* 
+hey, I did not really expect you to check this side of my portfolio!
+it makes me glad to see though that you have come by. 
+
+The code above is minimally modified, and came with the template originally...
+I like to learn about different technologies all the time, and although you'd expect
+data analysts to focus more on numbers and databases, you also need
+to be very good at showing people your stuff. You shoudl alwats 
+leverage on templates, and customize to your needs!
+
+so yeah, welcome to my css sandbox. ~ ♠
+*/
+
+.hero-text-dark {
+  color: black
+}
+
+.showcase-project-description {
+  color: cornsilk
+}
+
+
+
+
+
+
+
+
+
+
