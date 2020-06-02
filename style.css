@@ -416,7 +416,9 @@ img {
   width: 100%;
   top: 0;
   left: 0;
-  right: 0; }
+  right: 0; 
+  
+  }
   .header-area .pixel-main-menu {
     position: relative;
     width: 100%;
@@ -443,6 +445,7 @@ img {
       @media only screen and (max-width: 767px) {
         .header-area .pixel-main-menu .classy-navbar .nav-brand {
           width: 80px;
+          
           margin-right: 10px; } }
       .header-area .pixel-main-menu .classy-navbar .classynav ul li a {
         font-weight: 500;
@@ -541,7 +544,7 @@ img {
         border-color: #ff7902;
         color: #ff7902; }
   .header-area .is-sticky .pixel-main-menu {
-    background-color: #8a8b77;
+    background-color: #000;
     box-shadow: 0 7px 40px 0 rgba(0, 0, 0, 0.3); }
 
 .classy-navbar-toggler .navbarToggler span {
@@ -1017,7 +1020,7 @@ img {
 .footer-area {
   position: relative;
   z-index: 1;
-  background-color: #8a8b77;
+  background-color: #000;
   padding-left: 35px;
   padding-right: 35px; }
   @media only screen and (max-width: 767px) {
@@ -1754,14 +1757,21 @@ leverage on templates, and customize to your needs!
 so yeah, welcome to my css sandbox. ~ ♠
 */
 
-.hero-text-dark {
-  color: black
+.--footer-focus {
+  color: darkred
 }
 
 .showcase-project-description {
   color: cornsilk
 }
 
+#my-personal-brand {
+  color: white;
+}
+
+#first-category {
+  align-content: right;
+}
 
 
 
