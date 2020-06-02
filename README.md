@@ -4,3 +4,7 @@
 Analyst with Python skills and a strongbackground in marketingand business. Interested in the future of data and generating detailed and cross-functional insights dashboards for ***precise*** decision making.
 
 **Constantly learning. ~ ♠**
+
+
+# Check the live website @ [henriquezperozo.com](https://henriquezperozo.com)
+
