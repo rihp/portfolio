@@ -318,26 +318,24 @@
     <!-- ##### Footer Area Start ##### -->
     <footer class="footer-area section-padding-100-0">
         <div id="footernav"></div>
+        <script>
+            const footerxhr = new XMLHttpRequest();
+            const footernav = document.getElementById('footernav');
+    
+            footerxhr.onload = function(){
+                if (this.status === 200) {
+                    footernav.innerHTML = footerxhr.responseText;
+                } else {
+                    console.warn('!! did not receive a 200 OK response')
+                }
+            };
+    
+            footerxhr.open('get', 'footer.html');
+            footerxhr.send();
+        </script> 
     </footer>
-    <script>
-        const footerxhr = new XMLHttpRequest();
-        const footernav = document.getElementById('footernav');
-
-        footerxhr.onload = function(){
-            if (this.status === 200) {
-                footernav.innerHTML = footerxhr.responseText;
-            } else {
-                console.warn('!! did not receive a 200 OK response')
-            }
-        };
-
-        footerxhr.open('get', 'footer.html');
-        footerxhr.send();
-    </script> 
     <!-- Load Header with AJAX End -->
-
-
-    <!-- ##### Footer Area Start ##### -->
+    <!-- ##### Footer Area End ##### -->
 
     <!-- ##### All Javascript Script ##### -->
     <!-- jQuery-2.2.4 js -->
