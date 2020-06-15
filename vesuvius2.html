@@ -317,19 +317,19 @@
         <div id="footernav"></div>
     </footer>
     <script>
-        const xhr = new XMLHttpRequest();
+        const footerxhr = new XMLHttpRequest();
         const footernav = document.getElementById('footernav');
 
-        xhr.onload = function(){
+        footerxhr.onload = function(){
             if (this.status === 200) {
-                footernav.innerHTML = xhr.responseText;
+                footernav.innerHTML = footerxhr.responseText;
             } else {
                 console.warn('!! did not receive a 200 OK response')
             }
         };
 
-        xhr.open('get', 'footer.html');
-        xhr.send();
+        footerxhr.open('get', 'footer.html');
+        footerxhr.send();
     </script> 
     <!-- Load Header with AJAX End -->
 
