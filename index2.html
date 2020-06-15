@@ -60,25 +60,6 @@
 
     </header>
 
-    <!-- Load Header with AJAX Start-->
-    <script>
-        const headerxhr = new XMLHttpRequest();
-        const headernav = document.getElementById('headernav');
-
-        headerxhr.onload = function(){
-            if (this.status === 200) {
-                headernav.innerHTML = headerxhr.responseText;
-            } else {
-                console.warn('!! did not receive a 200 OK response')
-            }
-        };
-
-        headerxhr.open('get', 'header.html');
-        headerxhr.send();
-    </script> 
-    <!-- Load Header with AJAX End -->
-
-
     <!-- ##### Header Area End ##### -->
 
 
@@ -303,6 +284,28 @@
     <script src="js/plugins/plugins.js"></script>
     <!-- Active js -->
     <script src="js/active.js"></script>
+
+
+
+    
+    <!-- Load Header with AJAX Start-->
+    <script>
+        const headerxhr = new XMLHttpRequest();
+        const headernav = document.getElementById('headernav');
+
+        headerxhr.onload = function(){
+            if (this.status === 200) {
+                headernav.innerHTML = headerxhr.responseText;
+            } else {
+                console.warn('!! did not receive a 200 OK response')
+            }
+        };
+
+        headerxhr.open('get', 'header.html');
+        headerxhr.send();
+    </script> 
+    <!-- Load Header with AJAX End -->
+
 </body>
 
 </html>
