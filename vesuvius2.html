@@ -40,26 +40,29 @@
             <div></div>
         </div>
     </div>
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+        <!-- Load Header with AJAX Start-->
+        <div id="headernav"></div>
 
-    <!-- Load Header with AJAX Start-->
-    <div id="headernav"></div>
+        <script>
+            const headerxhr = new XMLHttpRequest();
+            const headernav = document.getElementById('headernav');
 
-    <script>
-        const xhr = new XMLHttpRequest();
-        const headernav = document.getElementById('headernav');
+            headerxhr.onload = function(){
+                if (this.status === 200) {
+                    headernav.innerHTML = headerxhr.responseText;
+                } else {
+                    console.warn('!! did not receive a 200 OK response')
+                }
+            };
 
-        xhr.onload = function(){
-            if (this.status === 200) {
-                headernav.innerHTML = xhr.responseText;
-            } else {
-                console.warn('!! did not receive a 200 OK response')
-            }
-        };
-
-        xhr.open('get', 'header.html');
-        xhr.send();
-    </script> 
-    <!-- Load Header with AJAX End -->
+            headerxhr.open('get', 'header.html');
+            headerxhr.send();
+        </script> 
+        <!-- Load Header with AJAX End -->
+    </header>
+    <!-- ##### Header Area End ##### -->
 
     <!-- ##### Breadcrumb Area Start ##### -->
     <section class="breadcrumb-area bg-img bg-overlay jarallax" style="background-image: url(img/bg-img/8.jpg);">
